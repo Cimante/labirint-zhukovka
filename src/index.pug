@@ -1,0 +1,61 @@
+include header
+
+body
+    header
+        .container
+            .row 
+                .col-12 
+                    .header.d-flex.justify-content-between.align-items-center
+                        picture.header__logo
+                            source(type="image/webp" srcset="images/logo.webp")
+                            source(type="image/png" srcset="images/logo.png")
+                            img(src="images/logo.png", alt="logo" title="Логотип «Лабиринт»")
+                        ul.header__menu-list
+                            li
+                                div.d-inline-block
+                                    img.header__menu-list--icon(src="images/compass.svg", alt="")
+                                    span Как добраться
+                            li
+                                div.d-inline-block
+                                    img.header__menu-list--icon(src="images/map-marker.svg", alt="")
+                                    span Схема ТРЦ
+                            li
+                                div.d-inline-block
+                                    span Меню 
+                                    img.header__menu-list--icon(src="https://via.placeholder.com/18x18", alt="")
+                                    
+    section.first-screen
+        .container-fluid
+            .container
+                .row 
+                    .col-12 
+                        nav.first-screen__submenu.d-flex.justify-content-end.align-items-center
+                            ul
+                                li 
+                                    span Магазины
+                                li 
+                                    span События
+                                li 
+                                    span Еда
+                                li 
+                                    span Услуги
+                                li 
+                                    span Развлечения
+
+        .big-logo
+            .container
+                .row 
+                    .col-12 
+                        .d-flex.justify-content-center
+                            picture
+                                source(type="image/webp" srcset="images/big-logo.webp")
+                                source(type="image/png" srcset="images/big-logo.png")
+                                img(src="images/big-logo.png", alt="logo")
+                    .col-12 
+                        h1.text-center.big-logo__heading Торгово–развлекательный центр
+
+                    .col-12.d-flex.justify-content-center.mt-4
+                        .decorate
+
+
+    include scripts
