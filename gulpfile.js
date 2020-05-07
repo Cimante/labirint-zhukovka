@@ -7,6 +7,8 @@ const purgeCSS = require('gulp-purgecss');
 const pug = require('gulp-pug');
 const webp = require('gulp-webp');
 const bs = require('browser-sync');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 
 sass.compiler = require('node-sass');
 
@@ -14,7 +16,8 @@ gulp.task('layout', () => {
     let templatesIgnoreList = [
         'src/scripts.pug',
         'src/header.pug',
-        'src/footer.pug'
+        'src/footer.pug',
+        'src/menu.pug'
     ]
     return gulp.src('src/*.pug', {ignore: templatesIgnoreList})
         .pipe(pug())
@@ -29,6 +32,15 @@ gulp.task('sass', () => {
             compatibility: 'ie8'
         }))
         .pipe(gulp.dest('public/css'));
+});
+
+gulp.task('js', () => {
+    return gulp.src('src/js/*.js')
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('public/js'));
 });
 
 gulp.task('images', () => {
@@ -73,5 +85,6 @@ gulp.task('bs', () => {
 
 gulp.task('watch', () => {
     gulp.watch(['src/sass/**/*.sass', 'src/**/*.pug'], gulp.series(['sass', 'layout']));
-	gulp.watch('src/images/**/*', gulp.series('images'));
+    gulp.watch('src/images/**/*', gulp.series('images'));
+    gulp.watch('src/js/**/*', gulp.series('js'));
 })

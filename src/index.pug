@@ -6,10 +6,11 @@ body
             .row 
                 .col-12 
                     .header.d-flex.justify-content-between.align-items-center
-                        picture.header__logo
-                            source(type="image/webp" srcset="images/logo.webp")
-                            source(type="image/png" srcset="images/logo.png")
-                            img(src="images/logo.png", alt="logo" title="Логотип «Лабиринт»")
+                        a(href="index.html")
+                            picture.header__logo
+                                source(type="image/webp" srcset="images/logo.webp")
+                                source(type="image/png" srcset="images/logo.png")
+                                img(src="images/logo.png", alt="logo" title="Логотип «Лабиринт»")
                         ul.header__menu-list
                             li
                                 div.d-inline-block
@@ -29,18 +30,18 @@ body
             .container
                 .row 
                     .col-12 
-                        nav.first-screen__submenu.d-flex.justify-content-end.align-items-center
+                        nav.first-screen__submenu.d-flex.justify-content-end.align-items-top
                             ul
                                 li 
-                                    span Магазины
+                                    a.d-inline-block(href="shops.html") Магазины
                                 li 
-                                    span События
+                                    a.d-inline-block(href="events.html") События
                                 li 
-                                    span Еда
+                                    a.d-inline-block(href="food.html") Еда
                                 li 
-                                    span Услуги
+                                    a.d-inline-block(href="services.html") Услуги
                                 li 
-                                    span Развлечения
+                                    a.d-inline-block(href="entertainment.html") Развлечения
 
         .big-logo
             .container
@@ -52,10 +53,147 @@ body
                                 source(type="image/png" srcset="images/big-logo.png")
                                 img(src="images/big-logo.png", alt="logo")
                     .col-12 
-                        h1.text-center.big-logo__heading Торгово–развлекательный центр
+                        h1.text-center.big-logo__heading Торгово&ndash;развлекательный центр
 
-                    .col-12.d-flex.justify-content-center.mt-4
+                    .col-12.d-flex.justify-content-center
                         .decorate
 
+                    .col-10.offset-1.big-logo__properties
+                        .d-flex.justify-content-between
+                            .big-logo__properties-item.d-flex.flex-row
+                                img(src="https://via.placeholder.com/40x40.webp", alt="")
+                                div
+                                    h2 4&nbsp;наземных этажа 1&nbsp;подземный этаж
+                            .big-logo__properties-item.d-flex.flex-row
+                                img(src="https://via.placeholder.com/40x40.webp", alt="")
+                                div
+                                    h2 Парковка на&nbsp;20 машино&ndash;мест
+                            .big-logo__properties-item.d-flex.flex-row
+                                img(src="https://via.placeholder.com/40x40.webp", alt="")
+                                div
+                                    h2 Общая площадь: 6025&nbsp;м
+                                        sup 2
 
+                    .col-12 
+                        .d-flex.justify-content-center
+                            .arrow
+                                span
+                                span
+                                span
+
+    section.news
+        .container 
+            .row 
+                .col-12
+                    h3.h3 Новости
+                    .decorate
+            .row 
+                .col-12
+                    .link-for-more
+                        .d-flex.justify-content-end
+                            span все события →
+        .container
+            .row
+                .col-4
+                    .news__latest
+                        ul.pl-0
+                            li.d-inline-block
+                                img.w-100(src="https://via.placeholder.com/350x200.webp", alt="")
+                                h4 Организация бесплатной доставки из&nbsp;ресторанов
+                .col-4
+                    .news__latest
+                        ul.pl-0
+                            li.d-inline-block
+                                img.w-100(src="https://via.placeholder.com/350x200.webp", alt="")
+                                h4 Открытие кинотеатра
+                .col-4
+                    .news__latest
+                        ul.pl-0
+                            li.d-inline-block
+                                img.w-100(src="https://via.placeholder.com/350x200.webp", alt="")
+                                h4 Торгово-развлекательный центр введён в&nbsp;эксплуатацию
+            .row 
+                .col-12 
+                    .block-divider
+
+    section.brands
+        .container 
+            .row 
+                .col-12
+                    h3.h3 Популярные бренды
+                    .decorate
+
+            .row 
+                .col-12
+                    .link-for-more
+                        .d-flex.justify-content-end
+                            span все магазины →
+
+        .container
+            .row 
+                .col-3
+                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-3
+                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-3
+                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-3
+                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+
+        .container 
+            .row 
+                .col-12 
+                    .block-divider
+
+
+    section.food
+        .container
+            .row 
+                .col-12 
+                    h3.h3 Рестораны
+                    .decorate
+
+            .row 
+                .col-12
+                    .link-for-more
+                        .d-flex.justify-content-end
+                            span вся еда →
+
+        .container
+            .row 
+                .col-3
+                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                    .desc__wrap
+                        h4.food-heading Conacasa Conlanonna
+                        p.food-description Итальянская кухня
+                        .is-work
+                            span.d-inline-block.working
+                            span Сейчас работает
+                .col-3
+                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                    .desc__wrap
+                        h4.food-heading Pizza-Sushi-Wok
+                        p.food-description Итальянская, азиатская и&nbsp;американская кухня
+                        .is-work
+                            span.d-inline-block.soon-closed
+                            span Закроется через 37 мин.
+                .col-3
+                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                    .desc__wrap
+                        h4.food-heading Ёбидоёби
+                        p.food-description Японская кухня
+                        .is-work
+                            span.d-inline-block.closed
+                            span Закрыто до 10:00
+                .col-3
+                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                    .desc__wrap
+                        h4.food-heading Пхали хинкали
+                        p.food-description Грузинская кухня
+                        .is-work
+                            span.d-inline-block.closed
+                            span Закрыто до 15.05.2020
+
+
+    include footer
     include scripts
