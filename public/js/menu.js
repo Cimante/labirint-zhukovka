@@ -1,0 +1,1 @@
+"use strict";console.clear();var app=function(){var e,n,t=function(){n.addEventListener("click",function(){return c(e,"nav-active")})},c=function(e,n){e.classList.contains(n)?e.classList.remove(n):e.classList.add(n)};e=document.querySelector("body"),n=document.querySelector(".menu-icon__container"),document.querySelectorAll(".nav__list-item"),t()}();

@@ -1,12 +1,15 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss'
 @import fonts
 @import colors
+@import menu
 @import scroll-arrows
 
 body 
     font-family: 'SF UI Display Regular'
     background-color: #121212
     color: white
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
 
 a
     text-decoration: none
@@ -17,11 +20,11 @@ a
         color: $primary-color
         transition: color .15s ease
                     
-
 .header
+    position: sticky
+    top: 0
     min-height: 90px
     border-bottom: 2px solid $gray-2
-    background-color: rgba($dark, .8)
     &__logo
         margin-left: 8px
     &__menu-list 
@@ -63,8 +66,8 @@ a
             padding: 2px 8px
             margin-top: -4px
             margin-right: -10px
-            &:last-child
-                margin-right: 0px
+        &:last-child .active
+            margin-right: 0px
     
     &__title
         margin-top: 230px
@@ -213,6 +216,17 @@ a
             font-size: 14px
             line-height: 25px
             color: $gray-1
+        &-place, &-label, &-date
+            margin-top: 12px
+            margin-bottom: 0px
+            &-icon
+                margin-right: 8px
+            span 
+                display: inline-block
+                line-height: 20px
+                color: $gray-5
+        &-label
+            margin-right: 32px
 
 .single
     margin-top: 130px
@@ -337,3 +351,7 @@ a
         font-family: 'SF UI Display Light', sans-serif
         font-size: 16px
         line-height: 26px
+
+.ultra-z-index
+    position: relative
+    z-index: 9999
