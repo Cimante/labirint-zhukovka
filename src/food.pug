@@ -32,11 +32,11 @@ body
                         nav.first-screen__submenu.d-flex.justify-content-end.align-items-top
                             ul
                                 li 
-                                    a.d-inline-block.active(href="shops.html") Магазины
+                                    a.d-inline-block(href="shops.html") Магазины
                                 li 
                                     a.d-inline-block(href="events.html") События
                                 li 
-                                    a.d-inline-block(href="food.html") Еда
+                                    a.d-inline-block.active(href="food.html") Еда
                                 li 
                                     a.d-inline-block(href="services.html") Услуги
                                 li 
@@ -44,46 +44,61 @@ body
 
                 .row
                     .col-12
-                        h1.first-screen__title Магазины
+                        h1.first-screen__title Еда
 
     section.content
         .container
             .row 
                 .col-4
-                    a(href="single-shop.html")
+                    a(href="single-food.html")
                         .content__item.d-flex.flex-column
                             img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                             .desc__wrap
-                                h2.content__item-title Магазин 1
-                                p.content__item-description Мужская одежда, женская одежда, детские&nbsp;товары
+                                h2.content__item-title Ресторан 1
+                                p.content__item-description Итальянская кухня
+                                .is-work
+                                    span.d-inline-block.is-work__mark.working
+                                    span.is-work__label Сейчас открыто
                 .col-4
-                    a(href="single-shop.html")
+                    a(href="single-food.html")
                         .content__item.d-flex.flex-column
                             img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                             .desc__wrap
-                                h2.content__item-title Магазин 2
-                                p.content__item-description Ювелирные украшения и&nbsp;часы
+                                h2.content__item-title Ресторан 2
+                                p.content__item-description Итальянская, азиатская и американская кухня
+                                .is-work
+                                    span.d-inline-block.is-work__mark.working
+                                    span.is-work__label Сейчас работает
                 .col-4
-                    a(href="single-shop.html")
+                    a(href="single-food.html")
                         .content__item.d-flex.flex-column
                             img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                             .desc__wrap
-                                h2.content__item-title Магазин 3
-                                p.content__item-description Товары для дома
+                                h2.content__item-title Ресторан 3
+                                p.content__item-description Японская кухня
+                                .is-work
+                                    span.d-inline-block.is-work__mark.soon-closed
+                                    span.is-work__label Закроется через 24 мин.
                 .col-4
-                    a(href="single-shop.html")
+                    a(href="single-food.html")
                         .content__item.d-flex.flex-column
                             img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                             .desc__wrap
-                                h2.content__item-title Магазин 4
-                                p.content__item-description Мужская, женская и&nbsp;детская одежда
+                                h2.content__item-title Ресторан 4
+                                p.content__item-description Грузинская кухня
+                                .is-work
+                                    span.d-inline-block.is-work__mark.closed
+                                    span.is-work__label Закрыто до 08:00
                 .col-4
-                    a(href="single-shop.html")
+                    a(href="single-food.html")
                         .content__item.d-flex.flex-column
                             img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                             .desc__wrap
-                                h2.content__item-title Магазин 5
-                                p.content__item-description Обувь, сумки, аксессуары
+                                h2.content__item-title Ресторан 5
+                                p.content__item-description Итальянская кухня
+                                .is-work
+                                    span.d-inline-block.is-work__mark.closed
+                                    span.is-work__label Закрыто до 10:00
 
 
     include footer

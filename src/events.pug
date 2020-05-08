@@ -47,67 +47,125 @@ body
                         h1.first-screen__title События
 
     section.content
+        .container 
+            .row
+                .col-12
+                    ul#isotope-filter
+                        li 
+                            a.isotope-btn.isotope-current-btn(href="" data-filter="*") Все
+                        li 
+                            a.isotope-btn(href="" data-filter=".news") Новости
+                        li 
+                            a.isotope-btn(href="" data-filter=".events") События
+                        li 
+                            a.isotope-btn(href="" data-filter=".sales") Акции
+
         .container
-            .row 
-                .col-4
-                    a(href="single-shop.html")
-                        .content__item.d-flex.flex-column
-                            img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                            .desc__wrap
-                                h2.content__item-title Событие 1
-                                .content__item-place.d-flex.flex-row.align-items-center
-                                    img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                    span Conacasa Conlanonna
-                                .d-flex.flex-row.align-items-center
-                                    .content__item-label.d-flex.flex-row.align-items-center
+            #isotope-sort
+                
+                .col-4#isotope-sortable.news
+                    .isotope-content-wrap
+                        a(href="single-event.html")
+                            .content__item.d-flex.flex-column
+                                img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
+                                .desc__wrap
+                                    h2.content__item-title Событие 1
+                                    .d-flex.flex-row.align-items-center
+                                        .content__item-label.d-flex.flex-row.align-items-center
+                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            span Новости
+
+                .col-4#isotope-sortable.news
+                    .isotope-content-wrap
+                        a(href="single-event.html")
+                            .content__item.d-flex.flex-column
+                                img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
+                                .desc__wrap
+                                    h2.content__item-title Событие 2
+                                    .d-flex.flex-row.align-items-center
+                                        .content__item-label.d-flex.flex-row.align-items-center
+                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            span Новости
+
+                .col-4#isotope-sortable.events
+                    .isotope-content-wrap
+                        a(href="single-event.html")
+                            .content__item.d-flex.flex-column
+                                img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
+                                .desc__wrap
+                                    h2.content__item-title Событие 3
+                                    .d-flex.flex-row.align-items-center
+                                        .content__item-label.d-flex.flex-row.align-items-center
+                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            span Событие
+                                        .content__item-date.d-flex.flex-row.align-items-center
+                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            span 21 мар
+
+                .col-4#isotope-sortable.sales
+                    .isotope-content-wrap
+                        a(href="single-event.html")
+                            .content__item.d-flex.flex-column
+                                img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
+                                .desc__wrap
+                                    h2.content__item-title Событие 4
+                                    .content__item-place.d-flex.flex-row.align-items-center
                                         img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                        span Акции
-                                    .content__item-date.d-flex.flex-row.align-items-center
-                                        img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                        span 15 апр &ndash; 5 мая
-                                
-                .col-4
-                    .content__item.d-flex.flex-column
-                        img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                        .desc__wrap
-                            h2.content__item-title Событие 2
-                            .d-flex.flex-row.align-items-center
-                                .content__item-label.d-flex.flex-row.align-items-center
-                                    img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                    span Новости
-                .col-4
-                    .content__item.d-flex.flex-column
-                        img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                        .desc__wrap
-                            h2.content__item-title Событие 3
-                            .d-flex.flex-row.align-items-center
-                                .content__item-label.d-flex.flex-row.align-items-center
-                                    img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                    span Новости
-                .col-4
-                    .content__item.d-flex.flex-column
-                        img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                        .desc__wrap
-                            h2.content__item-title Событие 4
-                            .d-flex.flex-row.align-items-center
-                                .content__item-label.d-flex.flex-row.align-items-center
-                                    img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                    span Событие
-                                .content__item-date.d-flex.flex-row.align-items-center
-                                        img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                        span 15 апр &ndash; 5 мая
-                .col-4
-                    .content__item.d-flex.flex-column
-                        img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                        .desc__wrap
-                            h2.content__item-title Событие 5
-                            .d-flex.flex-row.align-items-center
-                                .content__item-label.d-flex.flex-row.align-items-center
-                                    img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                    span Событие
-                                .content__item-date.d-flex.flex-row.align-items-center
-                                        img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                        span 30 фев
+                                        span Conacasa Conlanonna
+                                    .d-flex.flex-row.align-items-center
+                                        .content__item-label.d-flex.flex-row.align-items-center
+                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            span Акции
+                                        .content__item-date.d-flex.flex-row.align-items-center
+                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            span 15 апр &ndash; 5 мая
+
+
+
+
+                    //-
+                        .col-4.sales#isotope-sortable
+                            a(href="single-event.html")
+                                .content__item.d-flex.flex-column
+                                    img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
+                                    .desc__wrap
+                                        h2.content__item-title Событие 1
+                                        .content__item-place.d-flex.flex-row.align-items-center
+                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            span Conacasa Conlanonna
+                                        .d-flex.flex-row.align-items-center
+                                            .content__item-label.d-flex.flex-row.align-items-center
+                                                img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                                span Акции
+                                            .content__item-date.d-flex.flex-row.align-items-center
+                                                img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                                span 15 апр &ndash; 5 мая      
 
     include footer
     include scripts
+
+    script(src="js/isotope.pkgd.min.js")
+
+    script.
+        $(document).ready(function() {
+            $('#isotope-sort').isotope({
+                itemSelector: '#isotope-sortable'
+            });
+    
+            $('#isotope-filter a').click(function(){
+    
+                $('#isotope-filter a').removeClass('isotope-current-btn');
+                $(this).addClass('isotope-current-btn');
+                var selector = $(this).attr('data-filter');
+    
+                $('#isotope-sort').isotope({
+                    filter: selector,
+                    animationOptions: {
+                        duration: 1000,
+                        easing: 'easeOutQuart',
+                        queue: false
+                    }
+                });
+                return false;
+                });
+            });

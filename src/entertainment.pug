@@ -32,7 +32,7 @@ body
                         nav.first-screen__submenu.d-flex.justify-content-end.align-items-top
                             ul
                                 li 
-                                    a.d-inline-block.active(href="shops.html") Магазины
+                                    a.d-inline-block(href="shops.html") Магазины
                                 li 
                                     a.d-inline-block(href="events.html") События
                                 li 
@@ -40,50 +40,34 @@ body
                                 li 
                                     a.d-inline-block(href="services.html") Услуги
                                 li 
-                                    a.d-inline-block(href="entertainment.html") Развлечения
+                                    a.d-inline-block.active(href="entertainment.html") Развлечения
 
                 .row
                     .col-12
-                        h1.first-screen__title Магазины
+                        h1.first-screen__title Развлечения
 
     section.content
         .container
             .row 
                 .col-4
-                    a(href="single-shop.html")
+                    a(href="single-entertainment.html")
                         .content__item.d-flex.flex-column
                             img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                             .desc__wrap
-                                h2.content__item-title Магазин 1
-                                p.content__item-description Мужская одежда, женская одежда, детские&nbsp;товары
+                                h2.content__item-title VR-квесты
+
                 .col-4
-                    a(href="single-shop.html")
-                        .content__item.d-flex.flex-column
-                            img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                            .desc__wrap
-                                h2.content__item-title Магазин 2
-                                p.content__item-description Ювелирные украшения и&nbsp;часы
+                    .content__item.d-flex.flex-column
+                        img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
+                        .desc__wrap
+                            h2.content__item-title Боулинг
+
                 .col-4
-                    a(href="single-shop.html")
-                        .content__item.d-flex.flex-column
-                            img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                            .desc__wrap
-                                h2.content__item-title Магазин 3
-                                p.content__item-description Товары для дома
-                .col-4
-                    a(href="single-shop.html")
-                        .content__item.d-flex.flex-column
-                            img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                            .desc__wrap
-                                h2.content__item-title Магазин 4
-                                p.content__item-description Мужская, женская и&nbsp;детская одежда
-                .col-4
-                    a(href="single-shop.html")
-                        .content__item.d-flex.flex-column
-                            img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                            .desc__wrap
-                                h2.content__item-title Магазин 5
-                                p.content__item-description Обувь, сумки, аксессуары
+                    .content__item.d-flex.flex-column
+                        img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
+                        .desc__wrap
+                            h2.content__item-title Кинотеатр
+
 
 
     include footer

@@ -1,0 +1,86 @@
+include header
+
+body
+    .nav
+        .nav__content
+            ul.nav__list
+                li.nav__list-item О нас
+                li.nav__list-item Арендаторам
+                li.nav__list-item Контакты
+            .d-flex.flex-row.justify-content-start
+                ul.nav__sublist.d-flex.flex-column.mr-3
+                    li.nav__sublist-item Магазины
+                    li.nav__sublist-item События
+                    li.nav__sublist-item Еда
+                ul.nav__sublist.d-flex.flex-column
+                    li.nav__sublist-item Услуги
+                    li.nav__sublist-item Развлечения
+
+    header
+        .container
+            .row 
+                .col-12 
+                    .header.d-flex.justify-content-between.align-items-center.ultra-z-index
+                        a(href="index.html")
+                            picture.header__logo
+                                source(type="image/webp" srcset="images/logo.webp")
+                                source(type="image/png" srcset="images/logo.png")
+                                img(src="images/logo.png", alt="logo" title="Логотип «Лабиринт»")
+                        ul.header__menu-list
+                            //-
+                                li
+                                    .d-inline-block
+                                        img.header__menu-list--icon(src="images/compass.svg", alt="")
+                                        span Как добраться
+                                li
+                                    .d-inline-block
+                                        img.header__menu-list--icon(src="images/map-marker.svg", alt="")
+                                        span Схема ТРЦ
+                            li.d-flex.align-items-end.menu-icon__container
+                                span.d-inline-block.mr-2 Меню
+
+                                .menu-icon.float-right
+                                    span.menu-icon__line.menu-icon__line-left
+                                    span.menu-icon__line
+                                    span.menu-icon__line.menu-icon__line-right
+
+                                    
+    section.first-screen
+        .container-fluid
+            .container
+                .row 
+                    .col-12 
+                        .d-flex.justify-content-between
+                            a.backstep(href="events.html") ← Ко всем событиям
+                            nav.first-screen__submenu.d-flex.justify-content-end.align-items-top
+                                ul
+                                    li 
+                                        a.d-inline-block(href="shops.html") Магазины
+                                    li 
+                                        a.d-inline-block.active(href="events.html") События
+                                    li 
+                                        a.d-inline-block(href="food.html") Еда
+                                    li 
+                                        a.d-inline-block(href="services.html") Услуги
+                                    li 
+                                        a.d-inline-block(href="entertainment.html") Развлечения
+
+                .row.single
+                    .col-12
+                        h1.single__title Организация бесплатной доставки из&nbsp;ресторанов
+                        ul.single__tags
+                            li
+                                span 19 апреля 2020
+                            
+    section
+        .container.single-content.single-event
+            .row 
+                .col-12 
+                    .float-right
+                        img.z-fix.event-image(src="https://via.placeholder.com/470x254.webp", alt="")
+
+                    p.event-paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, adipisci, explicabo atque perspiciatis iste voluptatibus ipsa, minus autem enim velit sed nam eius! Facere libero dolorem illum consequatur hic itaque officiis veritatis iusto beatae magnam impedit soluta quaerat nam atque rerum, mollitia vitae repellendus eveniet recusandae error necessitatibus, commodi at totam et. Odit fuga laudantium vel qui nobis, libero inventore distinctio soluta atque harum minus sit ipsum omnis modi tempora adipisci excepturi illum, praesentium temporibus aut voluptate neque optio. Sequi quas sunt in exercitationem molestiae debitis eum harum eius vel nam est quibusdam ducimus iure labore tenetur, expedita id dolore.
+                    p.event-paragraph Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse cumque tempora a, dolore quod harum laudantium quos animi deleniti praesentium, optio, nulla iusto ad nam! Officiis illo, repellendus quam cum ea asperiores maiores deleniti quidem est? Tenetur eum laboriosam alias distinctio dolores vitae, enim maiores temporibus facilis. Totam debitis minus iusto eligendi autem accusamus, optio nemo nulla. Unde eligendi saepe, tempora laboriosam omnis laborum! Dolorum praesentium quae cum ullam sunt maiores autem similique veritatis obcaecati, natus dolor, temporibus deleniti voluptatum repellat quod quaerat laborum exercitationem fugiat eos! A nostrum nisi eaque, iste velit voluptates, aut impedit maxime provident quibusdam id?
+
+    include footer
+    include scripts
