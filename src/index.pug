@@ -2,7 +2,7 @@ include header
 
 body
     header
-        .container
+        .container(data-aos="fade" data-aos-duration="600")
             .row 
                 .col-12 
                     .header.d-flex.justify-content-between.align-items-center
@@ -27,7 +27,7 @@ body
                                     
     section.first-screen
         .container-fluid
-            .container
+            .container(data-aos="fade" data-aos-duration="600")
                 .row 
                     .col-12 
                         nav.first-screen__submenu.d-flex.justify-content-end.align-items-top
@@ -46,42 +46,42 @@ body
         .big-logo
             .container
                 .row 
-                    .col-12 
+                    .col-12(data-aos="fade-down" data-aos-duration="600" data-aos-delay="600")
                         .d-flex.justify-content-center
                             picture
                                 source(type="image/webp" srcset="images/big-logo.webp")
                                 source(type="image/png" srcset="images/big-logo.png")
                                 img(src="images/big-logo.png", alt="logo")
-                    .col-12 
+                    .col-12(data-aos="fade-down" data-aos-duration="600" data-aos-delay="900")
                         h1.text-center.big-logo__heading Торгово&ndash;развлекательный центр
 
-                    .col-12.d-flex.justify-content-center
+                    .col-12.d-flex.justify-content-center(data-aos="fade-down" data-aos-duration="600" data-aos-delay="900")
                         .decorate
 
                     .col-10.offset-1.big-logo__properties
                         .d-flex.justify-content-between
-                            .big-logo__properties-item.d-flex.flex-row
-                                img(src="https://via.placeholder.com/40x40.webp", alt="")
+                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1200" data-aos-easing="ease-out-quart")
+                                img(src="images/elevator.svg", alt="")
                                 div
                                     h2 4&nbsp;наземных этажа 1&nbsp;подземный этаж
-                            .big-logo__properties-item.d-flex.flex-row
-                                img(src="https://via.placeholder.com/40x40.webp", alt="")
+                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1500" data-aos-easing="ease-out-quart")
+                                img(src="images/parking.svg", alt="")
                                 div
                                     h2 Парковка на&nbsp;20 машино&ndash;мест
-                            .big-logo__properties-item.d-flex.flex-row
-                                img(src="https://via.placeholder.com/40x40.webp", alt="")
+                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1800" data-aos-easing="ease-out-quart")
+                                img(src="images/square.svg", alt="")
                                 div
                                     h2 Общая площадь: 6025&nbsp;м
                                         sup 2
 
-                    .col-12 
+                    .col-12
                         .d-flex.justify-content-center
-                            .arrow
+                            .arrow(data-aos="fade" data-aos-duration="300" data-aos-delay="2700")
                                 span
                                 span
                                 span
 
-    section.news
+    section.news(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in")
         .container 
             .row 
                 .col-12
@@ -91,7 +91,7 @@ body
                 .col-12
                     .link-for-more
                         .d-flex.justify-content-end
-                            span все события →
+                            a(href="events.html") все события →
         .container
             .row
                 .col-4
@@ -116,7 +116,7 @@ body
                 .col-12 
                     .block-divider
 
-    section.brands
+    section.brands(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in")
         .container 
             .row 
                 .col-12
@@ -127,7 +127,7 @@ body
                 .col-12
                     .link-for-more
                         .d-flex.justify-content-end
-                            span все магазины →
+                            a(href="shops.html") все магазины →
 
         .container
             .row 
@@ -146,7 +146,7 @@ body
                     .block-divider
 
 
-    section.food
+    section.food(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in")
         .container
             .row 
                 .col-12 
@@ -157,7 +157,7 @@ body
                 .col-12
                     .link-for-more
                         .d-flex.justify-content-end
-                            span вся еда →
+                            a(href="food.html") вся еда →
 
         .container
             .row 

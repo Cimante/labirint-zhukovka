@@ -1,8 +1,9 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss'
 @import fonts
 @import colors
-@import menu
+@import overlay-menu
 @import scroll-arrows
+@import 'aos/aos.scss'
 
 body 
     font-family: 'SF UI Display Regular'
@@ -44,6 +45,9 @@ a
             margin-right: 0px
             margin-left: 8px
 
+.fa
+    font-size: 20px !important
+
 .first-screen
     background-image: url('../images/bg.jpg')
     background-position: center center
@@ -61,13 +65,13 @@ a
             font-weight: 500
             &:not(:last-child)
                 margin-right: 40px
+            &:last-child .active
+                margin-right: 0px
         .active 
             border: 2px solid $primary-color
             padding: 2px 8px
             margin-top: -4px
             margin-right: -10px
-        &:last-child .active
-            margin-right: 0px
     
     &__title
         margin-top: 230px
@@ -104,7 +108,7 @@ a
             font-family: 'SF UI Display Medium'
 
     .arrow 
-        margin-top: 140px
+        margin-top: 105px
         margin-bottom: 70px
 
 .decorate
@@ -137,6 +141,7 @@ a
 
 .desc__wrap
     margin-left: 3px
+    padding-right: 3px
 
 .working
     background-color: $green
@@ -188,6 +193,10 @@ a
         margin-top: -4px
         div:not(:last-child)
             margin-right: 24px
+        a 
+            color: $gray-1
+            &:hover
+                color: $text-color
 
     .copyright
         margin-top: 70px
@@ -341,7 +350,11 @@ a
             list-style: none
             display: inline-block
             &:not(:last-child)
-                margin-right: 16px
+                margin-right: 24px
+            a 
+                color: $gray-1
+                &:hover
+                    color: $text-color
 
     .kitchens p
         color: $text-color
@@ -396,3 +409,23 @@ a
         margin: 0px -8px
         border: 2px solid $primary-color
         transition: border .1s ease
+
+// Animation Delays
+$delay-step: 0.25
+.animation__delay-1
+    animation-delay: $delay-step + s
+
+.animation__delay-2
+    animation-delay: ($delay-step * 2) + s
+
+.animation__delay-3
+    animation-delay: ($delay-step * 3) + s
+
+.animation__delay-4
+    animation-delay: ($delay-step * 4) + s
+
+.animation__delay-5
+    animation-delay: ($delay-step * 5) + s
+
+.animation__delay-10
+    animation-delay: ($delay-step * 10) + s

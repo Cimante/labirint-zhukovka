@@ -43,10 +43,10 @@ body
                                     a.d-inline-block(href="entertainment.html") Развлечения
 
                 .row
-                    .col-12
+                    .col-12(data-aos="fade" data-aos-duration="300" data-aos-delay="200" data-aos-easing="ease-in")
                         h1.first-screen__title События
 
-    section.content
+    section.content(data-aos="fade" data-aos-duration="400" data-aos-delay="500" data-aos-easing="ease-in")
         .container 
             .row
                 .col-12
@@ -61,7 +61,7 @@ body
                             a.isotope-btn(href="" data-filter=".sales") Акции
 
         .container
-            #isotope-sort
+            #isotope-sort(data-aos="fade-down" data-aos-duration="400" data-aos-delay="500" data-aos-easing="ease-in")
                 
                 .col-4#isotope-sortable.news
                     .isotope-content-wrap
@@ -72,7 +72,7 @@ body
                                     h2.content__item-title Событие 1
                                     .d-flex.flex-row.align-items-center
                                         .content__item-label.d-flex.flex-row.align-items-center
-                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            img.content__item-place-icon(src="images/label.svg", alt="")
                                             span Новости
 
                 .col-4#isotope-sortable.news
@@ -84,7 +84,7 @@ body
                                     h2.content__item-title Событие 2
                                     .d-flex.flex-row.align-items-center
                                         .content__item-label.d-flex.flex-row.align-items-center
-                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            img.content__item-place-icon(src="images/label.svg", alt="")
                                             span Новости
 
                 .col-4#isotope-sortable.events
@@ -96,10 +96,10 @@ body
                                     h2.content__item-title Событие 3
                                     .d-flex.flex-row.align-items-center
                                         .content__item-label.d-flex.flex-row.align-items-center
-                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            img.content__item-place-icon(src="images/label.svg", alt="")
                                             span Событие
                                         .content__item-date.d-flex.flex-row.align-items-center
-                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            img.content__item-place-icon(src="images/calendar.svg", alt="")
                                             span 21 мар
 
                 .col-4#isotope-sortable.sales
@@ -110,36 +110,15 @@ body
                                 .desc__wrap
                                     h2.content__item-title Событие 4
                                     .content__item-place.d-flex.flex-row.align-items-center
-                                        img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                        img.content__item-place-icon(src="images/shop.svg", alt="")
                                         span Conacasa Conlanonna
                                     .d-flex.flex-row.align-items-center
                                         .content__item-label.d-flex.flex-row.align-items-center
-                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            img.content__item-place-icon(src="images/label.svg", alt="")
                                             span Акции
                                         .content__item-date.d-flex.flex-row.align-items-center
-                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
+                                            img.content__item-place-icon(src="images/calendar.svg", alt="")
                                             span 15 апр &ndash; 5 мая
-
-
-
-
-                    //-
-                        .col-4.sales#isotope-sortable
-                            a(href="single-event.html")
-                                .content__item.d-flex.flex-column
-                                    img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
-                                    .desc__wrap
-                                        h2.content__item-title Событие 1
-                                        .content__item-place.d-flex.flex-row.align-items-center
-                                            img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                            span Conacasa Conlanonna
-                                        .d-flex.flex-row.align-items-center
-                                            .content__item-label.d-flex.flex-row.align-items-center
-                                                img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                                span Акции
-                                            .content__item-date.d-flex.flex-row.align-items-center
-                                                img.content__item-place-icon(src="https://via.placeholder.com/12x12.webp", alt="")
-                                                span 15 апр &ndash; 5 мая      
 
     include footer
     include scripts

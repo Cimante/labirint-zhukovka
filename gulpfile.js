@@ -84,7 +84,7 @@ gulp.task('bs', () => {
 })
 
 gulp.task('watch', () => {
-    gulp.watch(['src/sass/**/*.sass', 'src/**/*.pug'], gulp.series(['sass', 'layout']));
+    gulp.watch(['src/sass/**/*.sass','src/sass/**/*.scss', 'src/**/*.pug'], gulp.series(['sass', 'layout']));
     gulp.watch('src/images/**/*', gulp.series('images'));
     gulp.watch('src/js/**/*', gulp.series('js'));
 })
