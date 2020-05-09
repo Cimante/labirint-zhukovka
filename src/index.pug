@@ -2,28 +2,56 @@ include header
 
 body
     header
-        .container(data-aos="fade" data-aos-duration="600")
+        .container
             .row 
                 .col-12 
-                    .header.d-flex.justify-content-between.align-items-center
+                    .header.d-flex.justify-content-between.align-items-center.ultra-z-index
                         a(href="index.html")
                             picture.header__logo
                                 source(type="image/webp" srcset="images/logo.webp")
                                 source(type="image/png" srcset="images/logo.png")
                                 img(src="images/logo.png", alt="logo" title="Логотип «Лабиринт»")
                         ul.header__menu-list
-                            li
-                                div.d-inline-block
-                                    img.header__menu-list--icon(src="images/compass.svg", alt="")
-                                    span Как добраться
-                            li
-                                div.d-inline-block
-                                    img.header__menu-list--icon(src="images/map-marker.svg", alt="")
-                                    span Схема ТРЦ
-                            li
-                                div.d-inline-block
-                                    span Меню 
-                                    img.header__menu-list--icon(src="https://via.placeholder.com/18x18", alt="")
+                            //-
+                                li
+                                    .d-inline-block
+                                        img.header__menu-list--icon(src="images/compass.svg", alt="")
+                                        span Как добраться
+                                li
+                                    .d-inline-block
+                                        img.header__menu-list--icon(src="images/map-marker.svg", alt="")
+                                        span Схема ТРЦ
+                            li.d-flex.align-items-end.menu-icon__container
+                                .button
+                                    a.btn-open(href='#')
+                                        span.d-inline-block.mr-2 Меню
+
+        .overlay
+            .container
+                .row
+                    .col-12
+                        .wrap
+                            .wrap-nav   
+                                .d-flex.flex-column
+                                    ul.d.flex.flex-row
+                                        li
+                                            a(href='#') О нас
+                                        li
+                                            a(href='#') Арендаторам
+                                        li
+                                            a(href='#') Контакты
+
+                                    ul.d.flex.flex-row
+                                        li
+                                            a(href='#') Магазины
+                                        li
+                                            a(href='#') События
+                                        li
+                                            a(href='#') Еда
+                                        li
+                                            a(href='#') Услуги
+                                        li
+                                            a(href='#') Развлечения
                                     
     section.first-screen
         .container-fluid
@@ -81,7 +109,7 @@ body
                                 span
                                 span
 
-    section.news(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in")
+    section.news(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in" data-aos-once="true")
         .container 
             .row 
                 .col-12
@@ -116,7 +144,7 @@ body
                 .col-12 
                     .block-divider
 
-    section.brands(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in")
+    section.brands(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in" data-aos-once="true")
         .container 
             .row 
                 .col-12
@@ -146,7 +174,7 @@ body
                     .block-divider
 
 
-    section.food(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in")
+    section.food(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in" data-aos-once="true")
         .container
             .row 
                 .col-12 

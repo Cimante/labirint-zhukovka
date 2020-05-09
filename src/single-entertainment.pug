@@ -1,21 +1,6 @@
 include header
 
 body
-    .nav
-        .nav__content
-            ul.nav__list
-                li.nav__list-item О нас
-                li.nav__list-item Арендаторам
-                li.nav__list-item Контакты
-            .d-flex.flex-row.justify-content-start
-                ul.nav__sublist.d-flex.flex-column.mr-3
-                    li.nav__sublist-item Магазины
-                    li.nav__sublist-item События
-                    li.nav__sublist-item Еда
-                ul.nav__sublist.d-flex.flex-column
-                    li.nav__sublist-item Услуги
-                    li.nav__sublist-item Развлечения
-
     header
         .container
             .row 
@@ -37,12 +22,36 @@ body
                                         img.header__menu-list--icon(src="images/map-marker.svg", alt="")
                                         span Схема ТРЦ
                             li.d-flex.align-items-end.menu-icon__container
-                                span.d-inline-block.mr-2 Меню
+                                .button
+                                    a.btn-open(href='#')
+                                        span.d-inline-block.mr-2 Меню
 
-                                .menu-icon.float-right
-                                    span.menu-icon__line.menu-icon__line-left
-                                    span.menu-icon__line
-                                    span.menu-icon__line.menu-icon__line-right
+        .overlay
+            .container
+                .row
+                    .col-12
+                        .wrap
+                            .wrap-nav   
+                                .d-flex.flex-column
+                                    ul.d.flex.flex-row
+                                        li
+                                            a(href='#') О нас
+                                        li
+                                            a(href='#') Арендаторам
+                                        li
+                                            a(href='#') Контакты
+
+                                    ul.d.flex.flex-row
+                                        li
+                                            a(href='#') Магазины
+                                        li
+                                            a(href='#') События
+                                        li
+                                            a(href='#') Еда
+                                        li
+                                            a(href='#') Услуги
+                                        li
+                                            a(href='#') Развлечения
 
                                     
     section.first-screen
