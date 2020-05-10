@@ -43,22 +43,22 @@ body
 
                                     ul.d.flex.flex-row
                                         li
-                                            a(href='#') Магазины
+                                            a(href='shops.html') Магазины
                                         li
-                                            a(href='#') События
+                                            a(href='events.html') События
                                         li
-                                            a(href='#') Еда
+                                            a(href='food.html') Еда
                                         li
-                                            a(href='#') Услуги
+                                            a(href='services.html') Услуги
                                         li
-                                            a(href='#') Развлечения
+                                            a(href='entertainment.html') Развлечения
                                     
     section.first-screen
         .container-fluid
             .container(data-aos="fade" data-aos-duration="600")
                 .row 
                     .col-12 
-                        nav.first-screen__submenu.d-flex.justify-content-end.align-items-top
+                        nav.first-screen__submenu.d-md-flex.justify-content-md-end.align-items-md-top
                             ul
                                 li 
                                     a.d-inline-block(href="shops.html") Магазины
@@ -86,17 +86,17 @@ body
                     .col-12.d-flex.justify-content-center(data-aos="fade-down" data-aos-duration="600" data-aos-delay="900")
                         .decorate
 
-                    .col-10.offset-1.big-logo__properties
-                        .d-flex.justify-content-between
-                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1200" data-aos-easing="ease-out-quart")
+                    .col-12.col-lg-10.offset-lg-1.big-logo__properties
+                        .d-flex.justify-content-md-between.align-items-center.flex-column.flex-md-row.justify-content-center
+                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1200" data-aos-easing="ease-out-quart" data-aos-once="true")
                                 img(src="images/elevator.svg", alt="")
                                 div
                                     h2 4&nbsp;наземных этажа 1&nbsp;подземный этаж
-                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1500" data-aos-easing="ease-out-quart")
+                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1500" data-aos-easing="ease-out-quart" data-aos-once="true")
                                 img(src="images/parking.svg", alt="")
                                 div
                                     h2 Парковка на&nbsp;20 машино&ndash;мест
-                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1800" data-aos-easing="ease-out-quart")
+                            .big-logo__properties-item.d-flex.flex-row(data-aos="fade-down" data-aos-duration="300" data-aos-delay="1800" data-aos-easing="ease-out-quart" data-aos-once="true")
                                 img(src="images/square.svg", alt="")
                                 div
                                     h2 Общая площадь: 6025&nbsp;м
@@ -104,7 +104,7 @@ body
 
                     .col-12
                         .d-flex.justify-content-center
-                            .arrow(data-aos="fade" data-aos-duration="300" data-aos-delay="2700")
+                            .arrow(data-aos="fade" data-aos-duration="300" data-aos-delay="2700" data-aos-once="true")
                                 span
                                 span
                                 span
@@ -122,23 +122,23 @@ body
                             a(href="events.html") все события →
         .container
             .row
-                .col-4
+                .col-6.col-md-4
                     .news__latest
                         ul.pl-0
                             li.d-inline-block
-                                img.w-100(src="https://via.placeholder.com/350x200.webp", alt="")
+                                img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                                 h4 Организация бесплатной доставки из&nbsp;ресторанов
-                .col-4
+                .col-6.col-md-4
                     .news__latest
                         ul.pl-0
                             li.d-inline-block
-                                img.w-100(src="https://via.placeholder.com/350x200.webp", alt="")
+                                img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                                 h4 Открытие кинотеатра
-                .col-4
+                .col-6.col-md-4
                     .news__latest
                         ul.pl-0
                             li.d-inline-block
-                                img.w-100(src="https://via.placeholder.com/350x200.webp", alt="")
+                                img.content__item-image(src="https://via.placeholder.com/350x200.webp", alt="")
                                 h4 Торгово-развлекательный центр введён в&nbsp;эксплуатацию
             .row 
                 .col-12 
@@ -158,15 +158,15 @@ body
                             a(href="shops.html") все магазины →
 
         .container
-            .row 
-                .col-3
-                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
-                .col-3
-                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
-                .col-3
-                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
-                .col-3
-                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+            .row.brands__items
+                .col-6.col-lg-3
+                    img.content__item-image(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-6.col-lg-3
+                    img.content__item-image(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-6.col-lg-3
+                    img.content__item-image(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-6.col-lg-3
+                    img.content__item-image(src="https://via.placeholder.com/256x144.webp", alt="")
 
         .container 
             .row 
@@ -188,33 +188,33 @@ body
                             a(href="food.html") вся еда →
 
         .container
-            .row 
-                .col-3
-                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+            .row.food__items
+                .col-6.col-lg-3
+                    img.content__item-image(src="https://via.placeholder.com/256x144.webp", alt="")
                     .desc__wrap
                         h4.food-heading Conacasa Conlanonna
                         p.food-description Итальянская кухня
                         .is-work
                             span.d-inline-block.working.is-work__mark
                             span.is-work__label Сейчас работает
-                .col-3
-                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-6.col-lg-3
+                    img.content__item-image(src="https://via.placeholder.com/256x144.webp", alt="")
                     .desc__wrap
                         h4.food-heading Pizza-Sushi-Wok
                         p.food-description Итальянская, азиатская и&nbsp;американская кухня
                         .is-work
                             span.d-inline-block.soon-closed.is-work__mark
                             span.is-work__label Закроется через 37 мин.
-                .col-3
-                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-6.col-lg-3
+                    img.content__item-image(src="https://via.placeholder.com/256x144.webp", alt="")
                     .desc__wrap
                         h4.food-heading Ёбидоёби
                         p.food-description Японская кухня
                         .is-work
                             span.d-inline-block.closed.is-work__mark
                             span.is-work__label Закрыто до 10:00
-                .col-3
-                    img.w-100(src="https://via.placeholder.com/256x144.webp", alt="")
+                .col-6.col-lg-3
+                    img.content__item-image(src="https://via.placeholder.com/256x144.webp", alt="")
                     .desc__wrap
                         h4.food-heading Пхали хинкали
                         p.food-description Грузинская кухня

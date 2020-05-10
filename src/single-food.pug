@@ -43,15 +43,15 @@ body
 
                                     ul.d.flex.flex-row
                                         li
-                                            a(href='#') Магазины
+                                            a(href='shops.html') Магазины
                                         li
-                                            a(href='#') События
+                                            a(href='events.html') События
                                         li
-                                            a(href='#') Еда
+                                            a(href='food.html') Еда
                                         li
-                                            a(href='#') Услуги
+                                            a(href='services.html') Услуги
                                         li
-                                            a(href='#') Развлечения
+                                            a(href='entertainment.html') Развлечения
 
 
                                     
@@ -61,8 +61,8 @@ body
                 .row 
                     .col-12 
                         .d-flex.justify-content-between
-                            a.backstep(href="food.html") ← Назад
-                            nav.first-screen__submenu.d-flex.justify-content-end.align-items-top
+                            a.backstep(href="food.html") ← К еде
+                            nav.first-screen__submenu.d-md-flex.justify-content-md-end.align-items-md-top
                                 ul
                                     li 
                                         a.d-inline-block(href="shops.html") Магазины
@@ -76,25 +76,25 @@ body
                                         a.d-inline-block(href="entertainment.html") Развлечения
 
                 .row.single
-                    .col-3(data-aos="fade" data-aos-duration="200" data-aos-delay="100" data-aos-easing="ease-in")
+                    .col-sm-3.d-none.d-sm-block(data-aos="fade" data-aos-duration="200" data-aos-delay="100" data-aos-easing="ease-in")
                         .single__logo
                             img(src="https://via.placeholder.com/270x200.webp", alt="")
-                    .col-9
-                        span.single__theme(data-aos="fade" data-aos-duration="200" data-aos-delay="300" data-aos-easing="ease-in") Еда
-                        h1.single__title(data-aos="fade" data-aos-duration="200" data-aos-delay="450" data-aos-easing="ease-in") Ресторан
-                        ul.single__tags(data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-easing="ease-in")
+                    .col-12.col-sm-9
+                        span.single__theme(data-aos="fade" data-aos-duration="200" data-aos-delay="300" data-aos-easing="ease-in" data-aos-once="true") Еда
+                        h1.single__title(data-aos="fade" data-aos-duration="200" data-aos-delay="450" data-aos-easing="ease-in" data-aos-once="true") Ресторан
+                        ul.single__tags(data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-easing="ease-in" data-aos-once="true")
                             li
                                 span Кафе и рестораны
                            
     section
         .container.single-content
             .row 
-                .col-8(data-aos="fade" data-aos-duration="200" data-aos-delay="750" data-aos-easing="ease-in")
+                .col-12.col-lg-8(data-aos="fade" data-aos-duration="200" data-aos-delay="750" data-aos-easing="ease-in" data-aos-once="true")
                     .single__image
                         img.z-fix(src="https://via.placeholder.com/760x400.webp", alt="")
 
-                .col-3.offset-1(data-aos="fade" data-aos-duration="200" data-aos-delay="900" data-aos-easing="ease-in")
-                    .single-content__info
+                .col-12.col-lg-3.offset-lg-1(data-aos="fade" data-aos-duration="200" data-aos-delay="900" data-aos-easing="ease-in" data-aos-once="true" )
+                    .single-content__info.d-flex.flex-column.align-items-center.d-lg-block
                         .floor
                             span 3
                             span этаж
@@ -106,7 +106,7 @@ body
                             span пт-вс:
                             span 10:00 ⸻ 01:00
                         .kitchens
-                            p.mb-0 Азиатская, Европейская, Русская, Итальянская, Немецкая, Американская кухни 
+                            p.mb-0 Азиатская, Европейская, Русская, Итальянская, Немецкая и&nbsp;Американская&nbsp;кухни 
                         .site
                             a(href="#" target="_blank") mysite.com
                         .socials
@@ -122,9 +122,9 @@ body
 
         .container(data-aos="fade" data-aos-duration="400" data-aos-easing="ease-in" data-aos-once="true")
             .row.single-content__description
-                .col-8
+                .col-12.col-lg-8
                     p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ipsam possimus magni, est illum sunt perferendis accusantium aspernatur, atque velit totam. Id, eos delectus eum sapiente provident illo porro libero, nisi ipsam praesentium facilis reiciendis quis! Omnis eveniet nesciunt itaque laborum fuga necessitatibus atque tempore quasi voluptas dolorum dicta ducimus hic voluptates exercitationem laboriosam nihil quae quo, sit, architecto esse? Vero tempora fugit quia, porro alias tenetur iure quidem aliquid ab quasi maxime veniam ea autem? Fuga voluptas ducimus corrupti sequi repellendus veniam eligendi, natus modi quisquam adipisci delectus aperiam non sapiente ad debitis perspiciatis quos ipsa nisi atque beatae.
-                .col-4
+                .col-lg-4.d-none.d-lg-block
                     .d-flex.justify-content-center
                         img(src="https://via.placeholder.com/270x200.webp", alt="")
 

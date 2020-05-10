@@ -1,23 +1,22 @@
-const gulp = require('gulp');
-const imagemin = require('gulp-imagemin');
-const sass = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
-const purgeCSS = require('gulp-purgecss');
-const pug = require('gulp-pug');
-const webp = require('gulp-webp');
-const bs = require('browser-sync');
-const uglify = require('gulp-uglify');
-const babel = require('gulp-babel');
+const gulp          = require('gulp');
+const imagemin      = require('gulp-imagemin');
+const sass          = require('gulp-sass');
+const cleanCSS      = require('gulp-clean-css');
+const autoprefixer  = require('gulp-autoprefixer');
+const purgeCSS      = require('gulp-purgecss');
+const pug           = require('gulp-pug');
+const webp          = require('gulp-webp');
+const bs            = require('browser-sync');
+const uglify        = require('gulp-uglify');
+const babel         = require('gulp-babel');
 
-sass.compiler = require('node-sass');
+sass.compiler       = require('node-sass');
 
 gulp.task('layout', () => {
     let templatesIgnoreList = [
         'src/scripts.pug',
         'src/header.pug',
-        'src/footer.pug',
-        'src/menu.pug'
+        'src/footer.pug'
     ]
     return gulp.src('src/*.pug', {ignore: templatesIgnoreList})
         .pipe(pug())
