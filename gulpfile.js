@@ -24,7 +24,7 @@ gulp.task('layout', () => {
 });
 
 gulp.task('sass', () => {
-    return gulp.src('src/sass/**/styles.sass')
+    return gulp.src(['src/sass/styles.sass', 'src/sass/vendor.sass'])
         .pipe(sass())
         .pipe(cleanCSS())
         .pipe(autoprefixer({
@@ -59,7 +59,7 @@ gulp.task('webp', () => {
 });
 
 gulp.task('sass-prod', () => {
-	return gulp.src('src/sass/**/styles.sass')
+	return gulp.src('src/sass/styles.sass')
 		.pipe(sass())
 		.pipe(purgeCSS({
 			content: ['src/**/*.pug'],
